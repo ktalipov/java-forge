@@ -20,7 +20,7 @@ out/
 Thumbs.db
 
 # Obsidian (если открываешь репозиторий как vault)
-.obsidian/workspace*.json
+.obsidian/
 
 # Секреты
 .env
