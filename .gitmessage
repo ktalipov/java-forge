@@ -1,0 +1,9 @@
+
+# <type>(<scope>): <summary, imperative, <=72 chars, no period>
+#
+# types: theory | practice | test | project | fix | refactor | review | docs | chore | ci
+# scope: core, oop, exceptions, generics, collections, streams, io, concurrency,
+#        jvm, testing, build, patterns, database, spring (optional for docs/chore/ci)
+#
+# Body (optional): why this change, what was non-obvious, what is still unclear.
+# Lines starting with # are ignored.

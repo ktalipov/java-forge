@@ -1,0 +1,27 @@
+# Maven / Java
+target/
+*.class
+*.jar
+*.war
+hs_err_pid*
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian (если открываешь репозиторий как vault)
+.obsidian/workspace*.json
+
+# Секреты
+.env
+*.pem

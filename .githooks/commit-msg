@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Проверяет формат первой строки коммита: <type>(<scope>): <summary>
+# Включается через ./scripts/setup.sh (git config core.hooksPath .githooks)
+
+msg_file="$1"
+first_line="$(grep -v '^#' "$msg_file" | head -n 1)"
+
+# Служебные коммиты git пропускаем
+if [[ "$first_line" =~ ^(Merge|Revert|fixup!|squash!) ]]; then
+  exit 0
+fi
+
+pattern='^(theory|practice|test|project|fix|refactor|review|docs|chore|ci)(\([a-z0-9-]+\))?: .{3,72}$'
+
+if [[ ! "$first_line" =~ $pattern ]]; then
+  echo "Неверный формат коммита:"
+  echo "  $first_line"
+  echo
+  echo "Ожидается: <type>(<scope>): <summary>   (summary 3–72 символа)"
+  echo "Типы: theory, practice, test, project, fix, refactor, review, docs, chore, ci"
+  echo "Пример: theory(collections): add HashMap internals note"
+  echo "Подробнее: docs/COMMITS.md"
+  exit 1
+fi

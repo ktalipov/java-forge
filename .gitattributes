@@ -1,0 +1,4 @@
+# Единые переводы строк: скрипты и хуки должны быть LF даже на Windows
+* text=auto
+*.sh text eol=lf
+.githooks/* text eol=lf
