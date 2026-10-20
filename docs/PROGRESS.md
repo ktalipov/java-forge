@@ -26,8 +26,12 @@
 
 | Проект | Статус | Релиз |
 |--------|--------|-------|
-| CLI-менеджер задач | ⬜ | |
-| REST API с БД | ⬜ | |
+| Hangman | ⬜ | |
+| Bank system | ⬜ | |
+| Log analyzer | ⬜ | |
+| File indexer | ⬜ | |
+| StockPilot | ⬜ | |
+| StockPilot API | ⬜ | |
 
 ## Статистика (обновляется раз в неделю)
 

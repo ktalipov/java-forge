@@ -68,14 +68,14 @@ java-forge/
 └── projects/                # мини-проекты, каждый = Maven-модуль
     ├── pom.xml              # сюда new-project.sh подключает проекты
     ├── README.md            # план проектов и как их вести
-    └── tasks-cli/           # пример: создаётся скриптом
+    └── hangman/             # пример: создаётся скриптом
         ├── README.md        # цель, требования, архитектура, как запустить
         └── src/             # код и тесты
 ```
 
 Остальные модули (`02-oop`, `03-exceptions`, …) создаются командой `./scripts/new-module.sh` по мере прохождения. Полный список в [docs/ROADMAP.md](docs/ROADMAP.md).
 
-Мини-проекты живут в `projects/` и создаются командой `./scripts/new-project.sh tasks-cli "CLI task manager"`. Подробнее в [projects/README.md](projects/README.md).
+Мини-проекты живут в `projects/` и создаются командой `./scripts/new-project.sh hangman "Console Hangman game"`. Подробнее в [projects/README.md](projects/README.md).
 
 ---
 

@@ -5,13 +5,13 @@
 # Использование:
 #   ./scripts/new-project.sh <имя-проекта> ["описание"]
 # Пример:
-#   ./scripts/new-project.sh tasks-cli "CLI task manager"
+#   ./scripts/new-project.sh hangman "Console Hangman game"
 set -euo pipefail
 shopt -u patsub_replacement 2>/dev/null || true
 
 usage() {
   echo "Использование: $0 <имя-проекта> [\"описание\"]"
-  echo "Имя: латиница, цифры и дефисы, начинается с буквы (например: tasks-cli)"
+  echo "Имя: латиница, цифры и дефисы, начинается с буквы (например: hangman)"
 }
 
 if [ $# -lt 1 ]; then

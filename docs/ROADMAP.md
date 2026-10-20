@@ -28,9 +28,14 @@
 
 Создаются командой `./scripts/new-project.sh <имя> "<описание>"`, подробности в [projects/README.md](../projects/README.md).
 
-1. **CLI-менеджер задач** (после модуля 06): коллекции, streams, файлы, тесты.
-2. **REST API с БД** (после модуля 14): Spring Boot, PostgreSQL, миграции, интеграционные тесты.
-3. **Свободный проект** на выбор: то, что хочется довести до релиза.
+1. **Hangman** (после модуля 01 `core`): строки, циклы, методы.
+2. **Bank system** (после модуля 02 `oop`): классы, наследование, интерфейсы, исключения.
+3. **Log analyzer** (после модулей 06 `streams` и 07 `io`): файлы, streams, regex.
+4. **File indexer** (после модуля 08 `concurrency`): потоки, пул потоков, конкурентные коллекции.
+5. **StockPilot**: Inventory & Stock Management System на Swing и JDBC. Нужны JDBC (часть модуля 13 `database`) и Swing, отдельной темы про который в roadmap пока нет.
+6. **StockPilot API** (после модуля 14 `spring`): тот же склад как REST-сервис на Spring Boot.
+
+Подробности по каждому в [projects/README.md](../projects/README.md).
 
 ## Критерий готовности модуля
 

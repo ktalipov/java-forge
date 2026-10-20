@@ -16,7 +16,7 @@
 | `theory` | конспект, заметки, схемы | `theory(collections): add HashMap internals note` |
 | `practice` | код упражнений и экспериментов | `practice(collections): implement SimpleHashMap with chaining` |
 | `test` | только тесты | `test(collections): cover collisions and resize` |
-| `project` | работа над мини-проектом | `project(tasks-cli): add persistence to JSON file` |
+| `project` | работа над мини-проектом | `project(hangman): add word list loading from file` |
 | `fix` | исправление ошибки в своём коде или конспекте | `fix(core): correct off-by-one in palindrome check` |
 | `refactor` | улучшение кода без смены поведения | `refactor(oop): extract Shape interface` |
 | `review` | повторение, самопроверка, недельный обзор | `review(core): answer self-check questions` |
@@ -26,7 +26,7 @@
 
 ## Scope
 
-Имя модуля без номера: `core`, `oop`, `exceptions`, `generics`, `collections`, `streams`, `io`, `concurrency`, `jvm`, `testing`, `build`, `patterns`, `database`, `spring`, либо имя проекта (`tasks-cli`). Для `docs`, `chore`, `ci` scope можно не указывать.
+Имя модуля без номера: `core`, `oop`, `exceptions`, `generics`, `collections`, `streams`, `io`, `concurrency`, `jvm`, `testing`, `build`, `patterns`, `database`, `spring`, либо имя проекта (`hangman`). Для `docs`, `chore`, `ci` scope можно не указывать.
 
 ## Правила
 

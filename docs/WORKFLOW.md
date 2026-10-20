@@ -6,7 +6,7 @@
 |-------|-----------|--------|
 | `main` | всегда рабочая сборка, законченные темы | |
 | `topic/<NN>-<slug>` | одна тема, живёт 1–5 дней | `topic/05-hashmap-internals` |
-| `project/<name>-<feature>` | одна фича мини-проекта, живёт 1–3 дня | `project/tasks-cli-json-storage` |
+| `project/<name>-<feature>` | одна фича мини-проекта, живёт 1–3 дня | `project/hangman-word-list` |
 | `fix/<slug>` | исправления | `fix/readme-typo` |
 
 Прямые коммиты в `main` допустимы только для мелких `docs`/`chore`.
@@ -50,7 +50,7 @@ git push -u origin HEAD
 |-----|-------|--------|
 | `m<NN>-done` | модуль закончен | `m01-done` |
 | `week-<YYYY>-W<WW>` | конец недели (по желанию) | `week-2026-W43` |
-| `<name>-v<X.Y.Z>` | релиз мини-проекта | `tasks-cli-v1.0.0` |
+| `<name>-v<X.Y.Z>` | релиз мини-проекта | `hangman-v1.0.0` |
 
 ```bash
 git tag -a m01-done -m "Module 01-core complete"
@@ -63,10 +63,10 @@ git push origin m01-done
 
 ```bash
 git checkout main && git pull
-./scripts/new-project.sh tasks-cli "CLI task manager"
-git checkout -b project/tasks-cli-scaffold
-git add projects && git commit    # project(tasks-cli): add project scaffold
-mvn -pl projects/tasks-cli -am verify
+./scripts/new-project.sh hangman "Console Hangman game"
+git checkout -b project/hangman-scaffold
+git add projects && git commit    # project(hangman): add project scaffold
+mvn -pl projects/hangman -am verify
 ```
 
 **Порядок работы:**
@@ -87,8 +87,8 @@ mvn -pl projects/tasks-cli -am verify
 - [ ] обновлены `docs/PROGRESS.md` и таблица в `projects/README.md`
 
 ```bash
-git tag -a tasks-cli-v1.0.0 -m "tasks-cli 1.0.0"
-git push origin tasks-cli-v1.0.0
+git tag -a hangman-v1.0.0 -m "hangman 1.0.0"
+git push origin hangman-v1.0.0
 ```
 
 Проекты ведут параллельно с модулями, но не больше одного активного за раз.
